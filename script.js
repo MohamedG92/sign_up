@@ -9,6 +9,6 @@ button.addEventListener("click", function () {
     if (nom.value === "" || email.value === "" || password.value === "") {
         alert("Please fill in all fields.");
     } else {
-        alert("Sign up successful!");
+        alert("Sign up successful! \n Name: " + nom.value + " \n Email: " + email.value + " \n Password: " + password.value);
     }
-});
+})

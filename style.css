@@ -22,3 +22,11 @@ body {
     border-radius: 5px;
     background-color: antiquewhite;
 }
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(129, 130, 54);
+    color: rgb(255, 255, 255);
+}
