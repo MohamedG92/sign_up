@@ -9,7 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const nom = document.getElementById("name");
         const email = document.getElementById("email");
         const password = document.getElementById("password");
+        const eyeIcon = document.getElementById("eye-icon");
         const button = document.getElementById("btn");
+
+        // Toggle password visibility
+        eyeIcon.addEventListener("click", function () {
+            if (password.type === "password") {
+                password.type = "text";
+                eyeIcon.textContent = "👁️‍🗨️";
+            } else {
+                password.type = "password";
+                eyeIcon.textContent = "👁️";
+            }
+        });
 
         button.addEventListener("click", function () {
             const nameVal = nom.value.trim();
@@ -43,7 +55,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (loginContainer) {
         const email = document.getElementById("email");
         const password = document.getElementById("password");
+        const eyeIcon = document.getElementById("eye-icon");
         const button = document.getElementById("btn");
+
+        // Toggle password visibility
+        eyeIcon.addEventListener("click", function () {
+            if (password.type === "password") {
+                password.type = "text";
+                eyeIcon.textContent = "👁️‍🗨️";
+            } else {
+                password.type = "password";
+                eyeIcon.textContent = "👁️";
+            }
+        });
 
         button.addEventListener("click", function () {
             const emailVal = email.value.trim();
